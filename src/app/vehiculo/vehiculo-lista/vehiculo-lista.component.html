@@ -1,5 +1,25 @@
-<ul>
-  <li *ngFor="let v of vehiculos">
-    {{ v.marca }}
-  </li>
-</ul>
+<img src="assets/images/hero.png" alt="">
+
+<table class="table custom-table">
+  <thead>
+    <tr class="table-dark">
+      <th scope="col">#</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Linea</th>
+      <th scope="col">Modelo</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr *ngFor="let v of vehiculos">
+      <th scope="row">{{ v.id }}</th>
+      <td>{{ v.marca }}</td>
+      <td>{{ v.linea }}</td>
+      <td>{{ v.modelo }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+  <p>Count</p>
+</div>
