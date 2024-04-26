@@ -18,6 +18,8 @@
   </tbody>
 </table>
 
-<div>
-  <p>Count</p>
-</div>
+<section class="contador">
+  <p *ngFor="let marca of obtenerKeys(vehiculosPorMarca)" class="mb-0">
+    Total {{ marca }}: {{ vehiculosPorMarca[marca] }}
+  </p>
+</section>
